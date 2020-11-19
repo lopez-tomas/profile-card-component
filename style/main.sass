@@ -17,6 +17,36 @@ html
     font-size: 62.5%
     font-family: $font-stack
 // #################################### //
-body
-    p
-        color: red
+main
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    width: 100%
+    background-color: $primary-color
+.card
+    height: 300px
+    width: 90%
+
+    &__header
+        height: 33%
+        img
+            width: 100%
+            border-top-right-radius: 15px
+            border-top-left-radius: 15px
+    
+    &__profile
+        position: relative
+        height: 67%
+        background-color: #fff
+        border-bottom-right-radius: 15px
+        border-bottom-left-radius: 15px
+
+        figure
+            position: absolute
+            top: calc(0% - 50px)
+            left: calc(50% - 57.595px)
+            img
+                border: 5px solid #fff
+                border-radius: 50%

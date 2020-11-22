@@ -3,8 +3,9 @@ $primary-color: hsl(185, 75%, 39%) // Dark Cyan
 $secondary-color: hsl(229, 23%, 23%) // Very Dark Desaturated Blue
 $tertiary-color: hsl(227, 10%, 46%) // Dark Grayish Blue
 $neutral-color: hsl(0, 0%, 59%) // Dark Gray
+// RGB of Dark Gray R:150 G:150 B: 150 //
 // Font
-$font-size: 1.8px
+$font-size: 1.8rem
 $font-stack: 'Kumbh Sans', sans-serif
 $font-normal: 400
 $font-bold: 700
@@ -18,24 +19,34 @@ html
     font-family: $font-stack
 // #################################### //
 main
-    position: relative
     display: flex
     justify-content: center
     align-items: center
-    height: 100vh
+    height: 95vh
     width: 100%
+    padding: 0 10px
+    text-align: center
     background-color: $primary-color
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg')
+    background-position: left -30% top 90%, right -20% bottom 250%
+    background-repeat: no-repeat
+    // background-size: 200px
+
 .card
-    height: 300px
+    height: 375px
     width: 90%
+    background-color: #fff
+    border-radius: 15px
 
     &__header
-        height: 33%
+        height: 127.8px
         img
+            height: 100%
             width: 100%
+            background-size: cover
             border-top-right-radius: 15px
             border-top-left-radius: 15px
-    
+
     &__profile
         position: relative
         height: 67%
@@ -43,10 +54,43 @@ main
         border-bottom-right-radius: 15px
         border-bottom-left-radius: 15px
 
-        figure
+        &--img
             position: absolute
-            top: calc(0% - 50px)
-            left: calc(50% - 57.595px)
+            top: calc(0% - 53px)
+            left: calc(50% - 53px)
             img
                 border: 5px solid #fff
                 border-radius: 50%
+        h1, h2, h3
+            font-size: 1.8rem
+
+        h1
+            padding-top: 75px
+            color: $secondary-color
+            span
+                padding-left: 5px
+                font-weight: 400
+                color: $tertiary-color
+        h2
+            padding-top: 10px
+            font-weight: 400
+            color: $tertiary-color
+
+        &--social
+            display: flex
+            justify-content: space-evenly
+            align-self: flex-end
+            margin-top: 30px
+            padding-top: 30px
+            border-top: 0.1px solid rgba(150, 150, 150, 0.3)
+            span
+                display: block
+                padding-top: 8px
+                font-size: 1.2rem
+                font-weight: 400
+                color: $tertiary-color
+
+footer
+    height: 5vh
+    background-color: $secondary-color
+    color: #fff

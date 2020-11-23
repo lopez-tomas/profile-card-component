@@ -28,13 +28,16 @@ main
     text-align: center
     background-color: $primary-color
     background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg')
-    background-position: left -30% top 90%, right -20% bottom 250%
+    background-position: left -90% top 150%, right -80% bottom 190%
     background-repeat: no-repeat
     // background-size: 200px
 
 .card
     height: 375px
+    max-width: 375px
     width: 90%
+    // flex-shrink: 0
+    flex-wrap: wrap
     background-color: #fff
     border-radius: 15px
 

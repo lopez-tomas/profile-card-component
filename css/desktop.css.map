@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,AAAC,CACF,SAAS,CAAE,KAAK,CAAG",
+    "mappings": "",
     "sources": [
         "../style/desktop.sass"
     ],

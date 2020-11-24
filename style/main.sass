@@ -3,7 +3,7 @@ $primary-color: hsl(185, 75%, 39%) // Dark Cyan
 $secondary-color: hsl(229, 23%, 23%) // Very Dark Desaturated Blue
 $tertiary-color: hsl(227, 10%, 46%) // Dark Grayish Blue
 $neutral-color: hsl(0, 0%, 59%) // Dark Gray
-// RGB of Dark Gray R:150 G:150 B: 150 //
+$white: #fff
 // Font
 $font-size: 1.8rem
 $font-stack: 'Kumbh Sans', sans-serif
@@ -36,7 +36,6 @@ main
     max-width: 375px
     width: 90%
     flex-wrap: wrap
-    background-color: #fff
     border-radius: 15px
 
     &__header
@@ -51,7 +50,7 @@ main
     &__profile
         position: relative
         height: 67%
-        background-color: #fff
+        background-color: $white
         border-bottom-right-radius: 15px
         border-bottom-left-radius: 15px
 
@@ -60,7 +59,7 @@ main
             top: calc(0% - 53px)
             left: calc(50% - 53px)
             img
-                border: 5px solid #fff
+                border: 5px solid $white
                 border-radius: 50%
         h1, h2, h3
             font-size: $font-size
@@ -92,6 +91,16 @@ main
                 color: $tertiary-color
 
 footer
+    display: flex
+    justify-content: center
+    align-items: center
     height: 5vh
     background-color: $secondary-color
-    color: #fff
+    font-size: $font-size - 0.7rem
+    color: $neutral-color
+
+    a
+        text-decoration: underline
+        color: $white
+        &:hover
+            color: $primary-color

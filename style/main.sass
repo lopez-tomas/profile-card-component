@@ -28,15 +28,13 @@ main
     text-align: center
     background-color: $primary-color
     background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg')
-    background-position: left -90% top 150%, right -80% bottom 190%
+    background-position: left 120% top 170%, right 120% bottom 175%
     background-repeat: no-repeat
-    // background-size: 200px
 
 .card
     height: 375px
     max-width: 375px
     width: 90%
-    // flex-shrink: 0
     flex-wrap: wrap
     background-color: #fff
     border-radius: 15px
@@ -65,18 +63,18 @@ main
                 border: 5px solid #fff
                 border-radius: 50%
         h1, h2, h3
-            font-size: 1.8rem
+            font-size: $font-size
 
         h1
             padding-top: 75px
             color: $secondary-color
             span
                 padding-left: 5px
-                font-weight: 400
+                font-weight: $font-normal
                 color: $tertiary-color
         h2
             padding-top: 10px
-            font-weight: 400
+            font-weight: $font-normal
             color: $tertiary-color
 
         &--social
@@ -89,8 +87,8 @@ main
             span
                 display: block
                 padding-top: 8px
-                font-size: 1.2rem
-                font-weight: 400
+                font-size: $font-size - .6rem
+                font-weight: $font-normal
                 color: $tertiary-color
 
 footer
